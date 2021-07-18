@@ -1,2 +1,6 @@
-# study-typescript
-study for typescript
+# Study TypeScript
+
+- study for typescript
+
+- Understanding TypeScript - 2021 Edition
+
