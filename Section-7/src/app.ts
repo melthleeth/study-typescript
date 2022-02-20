@@ -75,7 +75,7 @@ const numberStorage = new DataStorage<number>();
 // objStorage.removeItem({ name: "Max" });
 // console.log(objStorage.getItems());
 
-interface CourseGal {
+interface CourseGoal {
   title: string;
   description: string;
   completeUntil: Date;
@@ -85,4 +85,15 @@ function createCourseGoal(
   title: string,
   description: string,
   date: Date
-): CourseGoal {}
+): CourseGoal {
+  let courseGoal: Partial<CourseGoal> = {};
+  courseGoal.title = title;
+  courseGoal.description = description;
+  courseGoal.completeUntil = date;
+
+  return courseGoal as CourseGoal;
+}
+
+const namesArr: Readonly<string[]> = ["Meredith", "Chris"];
+// namesArr.push('Michael');
+// namesArr.pop;
